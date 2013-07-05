@@ -215,7 +215,7 @@
 		
 		// Check if the form should have nested formsets
 		// This is horribly hackish. It tries to collect one set of nested inlines from already existing rows and clone these
-		var search_space = $("#"+sourceParentPrefix+'-0').nextUntil("."+sourceParentPrefix + "-not-nested");
+		var search_space = $("#"+sourceParentPrefix+'-0');
 		
 		//all nested inlines
 		var nested_inlines = search_space.find("." + sourceParentPrefix + "-nested-inline");
